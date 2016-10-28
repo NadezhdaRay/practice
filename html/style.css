@@ -12,3 +12,11 @@ img {
 div {
     padding: 20px 650px;
 }
+
+.empty-circles {
+    list-style-type: circle;
+}
+
+#quadrant {
+    list-style-type: square;
+}
