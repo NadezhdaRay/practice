@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./style.css">
+	<title>Таблицы</title>
+	<style>
+		.icon {
+			width: 20px;
+			padding-left: 10px;
+		}
+		table {
+			margin: 40px 0;
+		}
+		td {
+			padding: 5px 8px;
+		}
+		#one {
+			border-top: 1px solid #444;
+			border-bottom: 1px solid #666;
+		}
+		#two td, #two th {
+			border: 1px solid #444;
+		}
+		[colspan="2"] {
+			text-align: center;
+		}
+		#three {
+			border-collapse: collapse;
+		}
+		#three th,
+		#three td {
+			border: 1px solid #000;
+		}
+		#three td:nth-child(even) {
+			background: yellow;
+		}
+		#three td:nth-child(odd) {
+			background: lightseagreen;
+		}
+		#three td:nth-child(3) {
+			text-align: center;
+		}
+		#three th {
+			color: #fff;
+			background: #666;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<table id="one">
+			<caption><b>Химические элементы</b></caption>
+			<tr>
+				<th>Номер</th>
+				<th>Название</th>
+				<th>Символ</th>
+				<th>Год</th>
+				<th>Статья</th>
+			<tr>
+				<td>1</td>
+				<td><a href="#">Водород</a></td>
+				<td><b>H</b></td>
+				<td>1766</td>
+				<td><img class="icon" src="./images/icon.png" alt=""></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><a href="#">Гелий</a></td>
+				<td><b>He</b></td>
+				<td>1895</td>
+				<td><img class="icon" src="./images/icon.png" alt=""></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><a href="#">Бор</a></td>
+				<td><b>B</b></td>
+				<td>1808</td>
+				<td><img class="icon" src="./images/icon.png" alt=""></td>
+			</tr>
+		</table>
+		
+		<table id="two">
+			<caption>Добыча драгоценных камней</caption>
+			<tr>
+				<th></th>
+				<th>2010</th>
+				<th>2012</th>
+				<th>2014</th>
+			<tr>
+				<td>Сапфиры</td>
+				<td rowspan="2">1483</td>
+				<td>4532</td>
+				<td>6743</td>
+			</tr>
+			<tr>
+				<td>Рубины</td>
+				<td>3835</td>
+				<td>7482</td>
+			</tr>
+			<tr>
+				<td>Алмазы</td>
+				<td>683</td>
+				<td colspan="2">238</td>
+			</tr>
+		</table>
+		
+		<table id="three">
+			<tr>
+				<th>Название</th>
+				<th>Цвет</th>
+				<th style="width: 150px;">Твердость по Моосу</th>
+				<th>Формула</th>
+			<tr>
+				<td>Алмаз</td>
+				<td>Белый</td>
+				<td>10</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>Рубин</td>
+				<td>Красный</td>
+				<td>9</td>
+				<td>Al<sub>2</sub>O<sub>3</sub></td>
+			</tr>
+			<tr>
+				<td>Аметист</td>
+				<td>Голубой</td>
+				<td>7</td>
+				<td>SiO<sub>2</sub></td>
+			</tr>
+			<tr>
+				<td>Изумруд</td>
+				<td>Зеленый</td>
+				<td>8</td>
+				<td>Be<sub>3</sub>Al<sub>2</sub>(SiO<sub>3</sub>)<sub>6</sub></td>
+			</tr>
+			<tr>
+				<td>Сапфир</td>
+				<td>Голубой</td>
+				<td>9</td>
+				<td>Al<sub>2</sub>O<sub>3</sub></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
