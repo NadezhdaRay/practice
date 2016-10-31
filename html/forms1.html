@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./style.css">
+	<title>Запись на курсы</title>
+</head>
+<body>
+<div>
+	<h1>Запись на курсы</h1>
+	<hr>
+	
+	<form action="#">
+		<label for="name"><b>Ваше имя:</b></label><br>
+		<input type="text" id="name"><br><br>
+		
+		<label for="login"><b>Ваш логин:</b></label><br>
+		<input type="text" id="login" placeholder="Vasya Pupkin"><br><br>
+		
+		<label for="pass"><b>Ваш пароль:</b></label><br>
+		<input type="password" id="pass" placeholder="enter your password please"><br><br>
+		
+		<label><b>Какой сериал любите?</b></label><br>
+		<label for="game"><input name="serial" type="radio" id="game">Игра престолов</label><br>
+		<label for="bb"><input name="serial" type="radio" id="bb">Во все тяжкие</label><br>
+		<label for="tbv"><input name="serial" type="radio" id="tbv">Теория большого взрыва</label><br><br>
+		
+		<label><b>Какой сериал любите?</b></label><br>
+		<label for="game1"><input name="serial1" type="checkbox" id="game1">Игра престолов</label><br>
+		<label for="bb1"><input name="serial1" type="checkbox" id="bb1">Во все тяжкие</label><br>
+		<label for="tbv1"><input name="serial1" type="checkbox" id="tbv1">Теория большого взрыва</label><br><br>
+		
+		<label for="file">Загрузите ваши фотографии на сервер</label><br><br>
+		<input type="file" id="file"><br><br>
+		
+		<label for="extra">Комментарий</label><br>
+		<textarea name="info" id="extra" cols="30" rows=3></textarea><br><br>
+		
+		<button type="button">Понажимай меня</button>
+		<button type="submit">Отправить</button>
+		<button type="reset">Очистить</button>
+	</form>
+</div>
+</body>
+</html>
