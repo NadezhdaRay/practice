@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./style.css">
+	<title>Запись на курсы</title>
+</head>
+<body>
+<div>
+	<h1>Запись на курсы</h1>
+	<hr>
+	
+	<form action="#">
+		<label for="name">Имя:</label><br>
+		<input type="text" id="name" value="Алексей"><br><br>
+		
+		<label>Язык программирования:</label><br>
+		<label for="cpp"><input name="language" type="radio" id="cpp">C++</label><br>
+		<label for="php"><input name="language" type="radio" id="php" checked>PHP</label><br>
+		<label for="python"><input name="language" type="radio" id="python">Python</label><br><br>
+		
+		<label for="extra">Дополнительная информация</label><br>
+		<textarea name="info" id="extra" cols="30" rows=5>Есть опыт программирования на С++</textarea><br><br>
+		
+		<label for="secret">Секретное слово:</label><br>
+		<input type="password" id="secret" value="11111111"><br><br>
+		
+		<button type="submit">Отправить</button>
+		<button type="reset">Очистить</button>
+	</form>
+</div>
+</body>
+</html>
